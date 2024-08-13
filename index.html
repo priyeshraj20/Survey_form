@@ -12,20 +12,35 @@
     <p id="description">This survey is related to all things Gaming.</p>
     <form id="survey-form">
       <fieldset>
-        <label for=""><input id="name" type="text" required >Enter your Name:</label>
-        <label for=""><input id="email" type="email">Enter your Email:</label>
-        <label for=""> <input id="number" type="number">Enter your number:</label>
-        <label for=""></label>
-
-       
-       
+        <label id="name-label" for="" >Enter your Name: <input id="name" type="text" placeholder="Name" required ></label>
+        <label id="email-label" for="">Enter your Email: <input id="email" type="email" placeholder="Email" required></label>
+        <label id="number-label" for="">Enter your number: <input id="number" type="number" min="2" max="99" placeholder="Number" ></label>
+       </fieldset>
       
-             
-
-
-
-      </fieldset>
-      
+       <fieldset>
+        <label for="dropdown">
+         <select id="dropdown" name="dropdown">
+          <option value="">Specify</option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4">Other</option>
+         </select>
+       </label>
+       </fieldset>
+       <fieldset>
+          <label for="">1<input value="1" name="no" type="radio" checked/></label>
+          <label for="">2<input value="2" name="no" type="radio"/></label>
+       </fieldset>
+       <fieldset>
+          <label for="">1<input value="1" type="checkbox"></label>
+          <label for="">2<input value="2" type="checkbox"></label>
+       </fieldset>
+       
+       <fieldset>
+         <textarea name="" id=""></textarea>
+       </fieldset>
+       <label for="">Submit<input type="submit" id="submit"></label>
     </form>
    </body>
  </html>
